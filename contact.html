@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDi Software Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        /* Header Styles */
+        /* .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .top-bar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .contact-phone {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+        
+        .contact-phone a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-phone a:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-phone i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .header-panels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .panel-item {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .panel-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .panel-item i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+
+
+
+
+        .top-bar {
+            background-color: #eb2427;
+            padding: 30px 0;
+            text-align: right;
+        }
+        
+        .language-selector {
+            margin-right: 21px;
+            color: white;
+            display: inline-block;
+        }
+        
+        .language-selector select {
+            padding: 3px 4px;
+        }
+        
+        .google-translate {
+            display: inline-block;
+            color: white;
+            font-size: 15px;
+            margin-right: 18px;
+        }
+        
+        .google-translate img {
+            height: 16px;
+            vertical-align: middle;
+        } */
+
+         
+        /* Top Bar Styles - Enhanced */
+        .top-bar {
+            background: linear-gradient(135deg, #eb2427, #c51d20);
+            padding: 15px 1px;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .top-bar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .contact-phone {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+        
+        .contact-phone a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-phone a:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-phone i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .header-panels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .panel-item {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .panel-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .panel-item i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        
+        .language-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .language-selector select {
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .language-selector select:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .language-selector select option {
+            background-color: white;
+            color: #333;
+        }
+        
+        .google-translate {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .google-translate img {
+            height: 16px;
+            margin-left: 5px;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 100;
+        }
+        
+        .logo-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-left: 5px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        nav ul li a.active {
+            background-color: #eb2427;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            color: #eb2427;
+        }
+        
+        .freelancer-text {
+            text-align: left;
+            padding: 10px 0;
+            color: #1e90ff;
+            font-weight: bold;
+        }
+        
+        /* Banner Slider Styles */
+        .banner-container {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+        }
+        
+        .banner-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .banner-slide.active {
+            opacity: 1;
+        }
+        
+        .slide1 {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/api/placeholder/1200/400') center/cover;
+        }
+        
+        .slide2 {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/api/placeholder/1200/400') center/cover;
+        }
+        
+        .banner-text {
+            flex: 1;
+            padding-left: 50px;
+            text-align: left;
+        }
+        
+        .banner-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .banner-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .banner-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .banner-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .banner-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #eb2427;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .banner-btn:hover {
+            background-color: #c51d20;
+            transform: translateY(-3px);
+        }
+        
+        /* Navigation buttons */
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255,255,255,0.5);
+            color: #333;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+        
+        .slider-btn:hover {
+            background-color: rgba(255,255,255,0.8);
+        }
+        
+        .prev-btn {
+            left: 20px;
+        }
+        
+        .next-btn {
+            right: 20px;
+        }
+        
+        /* Slider indicators */
+        .slider-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        
+        .indicator {
+            width: 15px;
+            height: 5px;
+            background-color: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .indicator.active {
+            background-color: #eb2427;
+            width: 30px;
+        }
+        
+        /* About Section */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .content {
+            background-color: var(--white-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .content p {
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .contact-card {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 10px;
+            background-color: var(--white-color);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .contact-card img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin: 0 auto 1rem;
+            display: block;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: rgba(0, 153, 204, 0.1);
+        }
+
+        .contact-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .contact-card a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #1a2942;
+            color: white;
+            padding: 50px 0;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .contact-info h2 {
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+            font-size: 28px;
+        }
+        
+        .contact-info h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 50px;
+            background-color: #eb2427;
+        }
+        
+        .contact-detail {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-detail i {
+            margin-right: 15px;
+            color: #eb2427;
+            font-size: 20px;
+            min-width: 25px;
+        }
+        
+        .contact-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            padding: 20px;
+        }
+        
+        .map-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .social-links {
+            margin-top: 30px;
+        }
+        
+        .social-links p {
+            margin-bottom: 15px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-right: 9px;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            margin-bottom: 5px;
+        }
+        
+        .social-links a:hover {
+            background-color: #eb2427;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f8f8f8;
+            padding: 15px 0;
+            text-align: center;
+            color: #333;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Chat Button */
+        .chat-button {
+            position: fixed;
+            bottom: 65px;
+            right: 45px;
+            background-color: black;
+            color: white;
+            border: none;
+            width: 70px;
+            height: 62px;
+            padding: 10px;
+            font-size: 10px;
+            border-radius: 41px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .chat-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Chat Popup */
+        .chat-popup {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1001;
+            overflow: hidden;
+            display: none;
+        }
+        
+        .chat-header {
+            background-color: #38b6ff;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chat-header h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        .close-chat {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .chat-body {
+            padding: 15px;
+            height: 250px;
+            overflow-y: auto;
+        }
+        
+        .chat-message {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .chat-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .message-content {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+        
+        .chat-input {
+            padding: 15px;
+            border-top: 1px solid #eee;
+            display: flex;
+        }
+        
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        
+        .chat-input button {
+            background-color: #38b6ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+                font-size: 24px;
+                cursor: pointer;
+                color: #333;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: white;
+                width: 100%;
+                display: none;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                z-index: 10;
+            }
+            
+            nav ul.show {
+                display: block;
+            }
+            
+            nav ul li {
+                margin: 0;
+                text-align: center;
+                padding: 0;
+                border-bottom: 1px solid #eee;
+            }
+            
+            nav ul li a {
+                padding: 15px;
+            }
+            
+            .banner-text h1 {
+                font-size: 32px;
+            }
+            
+            .banner-text p {
+                font-size: 16px;
+            }
+            
+            .banner-slide {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .banner-text {
+                padding: 0 20px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            
+            .slider-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="contact-phone">
+                <a href="tel:+917015574125">
+                    <i class="fas fa-phone-alt"></i>
+                    +91 7015574125
+                </a>
+            </div>
+            
+            <div class="header-panels">
+                <a href="https://andisoftwaresolutions@gmail.com/" class="panel-item">
+                    <i class="fas fa-phone-volume"></i>
+                    Toll Free Panel
+                </a>
+                <a href="https://andisoftwaresolutions@gmail.com/" class="panel-item">
+                    <i class="fas fa-headset"></i>
+                    Voice Call Panel
+                </a>
+                <a href="https://andisoftwaresolutions@gmail.com/" class="panel-item">
+                    <i class="fas fa-sms"></i>
+                    SMS Panel
+                </a>
+                <a href="https://andisoftwaresolutions@gmail.com/" class="panel-item">
+                    <i class="fab fa-whatsapp"></i>
+                    Whatsapp Panel
+                </a>
+                <a href="https://andisoftwaresolutions@gmail.com/" class="panel-item">
+                    <i class="fas fa-credit-card"></i>
+                    Payment
+                </a>
+            </div>
+            
+            <div class="language-section">
+                <div class="language-selector">
+                    <select>
+                        <option>Select Language</option>
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Spanish</option>
+                    </select>
+                </div>
+                <div class="google-translate">
+                    Powered by <img src="google.png" alt="Google Translate">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-nav">
+                <div class="logo">
+                    <img src="andi logo.jpg" alt="ANDi Logo">
+                </div>
+                <nav>
+                    <div class="menu-toggle">☰</div>
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Products & Services</a></li>
+                        <li><a href="digital.html">Digital Marketing</a></li>
+                        <li><a href="cloude.html">Cloud Software</a></li>
+                        <li><a href="cloude.html">Cloud Software</a></li>
+                        <li><a href="Ourclient.html">Our Clients</a></li>
+                        <li><a href="OurPatner.html">Our Partners</a></li>
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="freelancer-text">
+        <div class="container">
+           <marquee behavior="scroll" direction="left">Freelancers/Franchise/Reseller Required in all major cities</marquee> 
+        </div>
+    </div>
+    
+    <!-- Banner Slider -->
+    <div class="banner-container">
+        <div class="banner-slide slide1 active">
+            <div class="banner-text">
+                <h1>WEB DESIGN/WEB DEVELOPMENT/mobile APPLICATION</h1>
+                <p>Custom software solutions for your business needs</p>
+                <a href="#" class="banner-btn">Learn More</a>
+            </div>
+            <div class="banner-image">
+                <img src="banner1.png" alt="">
+            </div>
+        </div>
+        <div class="banner-slide slide2">
+            <div class="banner-text">
+                <h1>SOFTWARE DEVELOPMENT</h1>
+                <p>Grow your business with our SOFTWARE DEVELOPMENT solutions</p>
+                <a href="#" class="banner-btn">Get Started</a>
+            </div>
+            <div class="banner-image">
+                <img src="banner2.jpg" alt="Software Development">
+            </div>
+        </div>
+        <button class="slider-btn prev-btn">❮</button>
+        <button class="slider-btn next-btn">❯</button>
+        <div class="slider-indicators">
+            <div class="indicator active" data-index="0"></div>
+            <div class="indicator" data-index="1"></div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div class="container">
+        <div class="content">
+            <h2>Get Started Today</h2>
+            <p>Have questions about ANDI Banking? Need assistance with implementation? Our team is ready to help you!</p>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <img src="phone.jpg" alt="Phone Icon">
+                    <h3>Phone</h3>
+                    <p>+91 701-557-4125</p>
+                </div>
+                
+                <div class="contact-card">
+                    <img src="mail.webp" alt="Email Icon">
+                    <h3>Email</h3>
+                    <p><a href="mailto:andisoftwaresolutions@gmail.com">andisoftwaresolutions@gmail.com</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <img src="web.webp" alt="Website Icon">
+                    <h3>Website</h3>
+                    <p><a href="http://www.andibanking.com" target="_blank">www.andibanking.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>CONTACT</h2>
+                    <p>For any kind of query, contact us with the details below.</p>
+                    <div class="contact-detail">
+                        <i>📞</i>
+                        <div class="contact-text">+91-7015574125</div>
+                    </div>
+                    <div class="contact-detail">
+                        <i>✉️</i>
+                        <div class="contact-text">andisoftwaresolutions@gmail.com</div>
+                    </div>
+                    <div class="contact-detail">
+                        <i>📍</i>
+                        <div class="contact-text">ANDi Software Solutions<br>Panipat & Haryana</div>
+                    </div>
+                    <div class="social-links">
+                        <p>Follow us :</p>
+                        <a href="#">facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">linkend</a>
+                     
+                    </div>
+                </div>
+                <div class="map-container">
+                    <img src="https://www.google.com/maps/place/ANDi+Software+Solutions/@29.390803,76.9668671,17z/data=!3m1!4b1!4m6!3m5!1s0x390ddbd321b7550d:0x85c88d61864b11b3!8m2!3d29.390803!4d76.9668671!16s%2Fg%2F11v0qq6j32?entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" alt="Map" style="width:100%; height:100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright 2024 © ANDi Software Solutions . All Rights reserved</p>
+        </div>
+    </footer>
+    
+    <!-- Chat Button -->
+    <button class="chat-button">CAN WE SERVE YOU?</button>
+    
+    <!-- Chat Popup -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <h3>ANDI</h3>
+            <button class="close-chat">×</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message">
+                <div class="chat-avatar">A</div>
+                <div class="message-content">
+                    <p>Hello Welcome to Andi Software Solutions. How Can I Help u ?</p>
+                    <small>7 minutes ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button>Send</button>
+        </div>
+    </div>
+    
+    <script>
+        // Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('show');
+        });
+        
+        // Banner Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.banner-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+        let slideInterval;
+        
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            // Show the current slide
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
+            
+            // Update current slide index
+            currentSlide = index;
+        }
+        
+        function nextSlide() {
+            showSlide((currentSlide + 1) % totalSlides);
+        }
+        
+        function prevSlide() {
+            showSlide((currentSlide - 1 + totalSlides) % totalSlides);
+        }
+        
+        // Add click event listeners to the navigation buttons
+        document.querySelector('.next-btn').addEventListener('click', function() {
+            clearInterval(slideInterval);
+            nextSlide();
+            startSlideInterval();
+        });
+        
+        document.querySelector('.prev-btn').addEventListener('click', function() {
+            clearInterval(slideInterval);
+            prevSlide();
+            startSlideInterval();
+        });
+        
+        // Add click event listeners to the indicators
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', function() {
+                clearInterval(slideInterval);
+                showSlide(index);
+                startSlideInterval();
+            });
+        });
+        
+        // Start the automatic slider
+        function startSlideInterval() {
+            slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+        }
+        
+        // Initialize the slider
+        startSlideInterval();
+        
+        // Chat button functionality
+        const chatButton = document.querySelector('.chat-button');
+        const chatPopup = document.getElementById('chatPopup');
+        const closeChat = document.querySelector('.close-chat');
+        
+        chatButton.addEventListener('click', function() {
+            chatPopup.style.display = chatPopup.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        closeChat.addEventListener('click', function() {
+            chatPopup.style.display = 'none';
+        });
+        
+        // Send message on Enter key
+        const chatInput = document.querySelector('.chat-input input');
+        const sendButton = document.querySelector('.chat-input button');
+        
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message !== '') {
+                const chatBody = document.querySelector('.chat-body');
+                const userMessage = document.createElement('div');
+                userMessage.className = 'chat-message';
+                userMessage.style.justifyContent = 'flex-end';
+                userMessage.innerHTML = `
+                    <div class="message-content" style="background-color: #38b6ff; color: white;">
+                        <p>${message}</p>
+                        <small>Just now</small>
+                    </div>
+                `;
+                chatBody.appendChild(userMessage);
+                chatBody.scrollTop = chatBody.scrollHeight;
+                chatInput.value = '';
+            }
+        }
+        
+        sendButton.addEventListener('click', sendMessage);
+        
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
